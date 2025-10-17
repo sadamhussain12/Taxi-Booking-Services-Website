@@ -153,9 +153,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // counter js
-
 $(document).ready(function () {
-    // function to start counting
     function startCounter() {
         $('.counter').each(function () {
             var $this = $(this),
@@ -178,7 +176,6 @@ $(document).ready(function () {
         });
     }
 
-    // detect when section enters viewport
     var counterTriggered = false;
     $(window).on('scroll', function () {
         var oTop = $('.counter-area').offset().top - window.innerHeight;
